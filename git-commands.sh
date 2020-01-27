@@ -9,8 +9,9 @@ RESET="\033[m"
 TEXT01="${TM_BRIGHT}${TM_DARK}"
 
 # https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
-echo -e "${TEXT01}Unstage a file:${RESET} \t${TX_YELLOW}git rm --cached <file-name>${RESET}"
-echo -e "${TEXT01}View git tree: ${RESET} \t${TX_YELLOW}git log --graph --oneline --all${RESET}"
+echo -e "${TEXT01}Unstage a file:${RESET}     \t${TX_YELLOW}git rm --cached <file-name>${RESET}"
+echo -e "${TEXT01}View git tree: ${RESET}     \t${TX_YELLOW}git log --graph --oneline --all${RESET}"
+echo -e "${TEXT01}View git branches: ${RESET} \t${TX_YELLOW}git branch -a${RESET}"
 echo -e "${TEXT01}Adding a new branch${RESET}"
 echo -e "${TEXT01}${RESET} \t${TX_YELLOW}git checkout master${RESET}"
 echo -e "${TEXT01}${RESET} \t${TX_YELLOW}git pull${RESET}"
