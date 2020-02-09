@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 3/4 bit version of ANSI-color
 # |------------+----------+---------+-------+------------------+------------------------------+--------------------------------------|
 # | color-mode | octal    | hex     | bash  | description      | example (= in octal)         | NOTE                                 |
