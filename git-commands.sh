@@ -9,11 +9,11 @@ RESET="\033[m"
 TEXT01="${TM_BRIGHT}${TM_DARK}"
 
 # https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
-echo -e "${TEXT01}Unstage a file:${RESET}     \t${TX_YELLOW}git rm --cached <file-name>${RESET}"
-echo -e "${TEXT01}View git tree: ${RESET}     \t${TX_YELLOW}git log --graph --oneline --all${RESET}"
-echo -e "${TEXT01}View git branches: ${RESET} \t${TX_YELLOW}git branch -a${RESET}"
-echo -e "${TEXT01}Change git user: ${RESET}   \t${TX_YELLOW}git config user.name \"bglynch\"${RESET}"
-echo -e "${TEXT01}${RESET}                    \t${TX_YELLOW}git config user.email \"bglynch17@gmail.com\"${RESET}"
+echo -e "${TEXT01}Undo git add:${RESET}                   ${TX_YELLOW}git reset <file-name>${RESET}"
+echo -e "${TEXT01}Unstage a file:${RESET}                 ${TX_YELLOW}git rm --cached <file-name>${RESET}"
+echo -e "${TEXT01}View git tree: ${RESET}                 ${TX_YELLOW}git log --graph --oneline --all${RESET}"
+echo -e "${TEXT01}View git branches: ${RESET}             ${TX_YELLOW}git branch -a${RESET}"
+echo -e "${TEXT01}Change user for single commit: ${RESET} ${TX_YELLOW}git -c \"user.name=bglynch\" -c \"user.email=bglynch17@gmail.com\" commit -m \"my commit\"${RESET}"
 echo -e ""
 echo -e "${TEXT01}Git merge master into feature branch: ${RESET}"
 # https://stackoverflow.com/questions/16955980/git-merge-master-into-feature-branch
