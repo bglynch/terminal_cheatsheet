@@ -37,6 +37,7 @@ echo -e "class ArrayList<E> extends AbstractList<E> implements List<E>, RandomAc
 echo -e "ArrayList is a resizable Array"
 echo -e "As elements are added it resizes automatically"
 echo -e "${Rst_GREY}Create:                                     ${Rst_YLOW}List myList = new ArrayList();"
+echo -e "${Rst_GREY}Create:                                     ${Rst_YLOW}List<Integer> myList = new ArrayList<>(Arrays.asList(1,2,3,4,5));"
 echo -e "${Rst_GREY}Add element:                                ${Rst_YLOW}myList.add(\"apples\");"
 echo -e "${Rst_GREY}Get first element:                          ${Rst_YLOW}myList.get(0);"
 echo -e "${Rst_GREY}Modify first element:                       ${Rst_YLOW}myList.set(0, \"bananas\");"

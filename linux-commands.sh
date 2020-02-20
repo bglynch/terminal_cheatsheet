@@ -44,5 +44,4 @@ echo -e "${Rst_GREY}                                         ${Rst_YLOW}    -r: 
 echo -e "${Rst_GREY}                                         ${Rst_YLOW}    \"ecommerce\": text were searching for"
 echo -e "${Rst_GREY}                                         ${Rst_YLOW}    *: where to search"
 echo -e "${Rst_GREY}Find a file:                             ${Rst_YLOW}find ~/ -name \"*.err\""
-echo -e "${Rst_GREY}Read html:                               ${Rst_YLOW}w3m -dump target/site/jacoco/index.html
-
+echo -e "${Rst_GREY}Read html:                               ${Rst_YLOW}w3m -dump target/site/jacoco/index.html"

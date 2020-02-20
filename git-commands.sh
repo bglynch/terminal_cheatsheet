@@ -9,6 +9,7 @@ RESET="\033[m"
 TEXT01="${TM_BRIGHT}${TM_DARK}"
 
 # https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
+echo -e "${TEXT01}Commit and skip tests:${RESET}          ${TX_YELLOW})$ git commit -m \"some changes\" --no-verify${RESET}"
 echo -e "${TEXT01}Undo git add:${RESET}                   ${TX_YELLOW}git reset <file-name>${RESET}"
 echo -e "${TEXT01}Unstage a file:${RESET}                 ${TX_YELLOW}git rm --cached <file-name>${RESET}"
 echo -e "${TEXT01}View git tree: ${RESET}                 ${TX_YELLOW}git log --graph --oneline --all${RESET}"
