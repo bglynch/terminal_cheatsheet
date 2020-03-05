@@ -26,4 +26,5 @@ echo -e "${Rst_GREY}Complete Statement:                ${Rst_YLOW}⌘ ⇧ Enter"
 echo -e "${Rst_GREY}Get options:                       ${Rst_YLOW}⌥ Enter"
 echo -e "${Rst_GREY}Duplicate line/selection:          ${Rst_YLOW}⌘ D"
 echo -e "${Rst_GREY}Quick Documentation:               ${Rst_YLOW}⌃ J"
+echo -e "${Rst_GREY}Run :                              ${Rst_YLOW}⌃ R"
 

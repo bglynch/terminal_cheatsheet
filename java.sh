@@ -77,3 +77,6 @@ echo -e "${Rst_GREY}Create custom Generics ${Rst_YLOW}
     }                                       |
     "
 
+
+echo -e "${RESET}${TM_BRIGHT}\nOther${RESET}"
+echo -e "${Rst_GREY}Take properties from the super class :        ${Rst_YLOW}super(amount, currency);"
