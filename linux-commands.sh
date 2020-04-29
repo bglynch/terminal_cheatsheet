@@ -46,3 +46,4 @@ echo -e "${Rst_GREY}                                         ${Rst_YLOW}    *: w
 echo -e "${Rst_GREY}Find a file:                             ${Rst_YLOW}find ~/ -name \"*.err\""
 echo -e "${Rst_GREY}Read html:                               ${Rst_YLOW}w3m -dump target/site/jacoco/index.html"
 echo -e "${Rst_GREY}Like cat but in vim:                     ${Rst_YLOW}less <filename>"
+echo -e "${Rst_GREY}View Project tree:                       ${Rst_YLOW}find . | sed -e \"s/[^-][^\/]*\// |/g\" -e \"s/|\([^ ]\)/|-\1/\""

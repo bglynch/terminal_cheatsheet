@@ -58,6 +58,7 @@ echo -e "${Rst_GREY}Remove entry:                               ${Rst_YLOW}myMap
 echo -e "${Rst_GREY}Remove entry, only if key/value match:      ${Rst_YLOW}myMap.remove(\"key\", \"value\");"
 echo -e "${Rst_GREY}Size of Map:                                ${Rst_YLOW}myMap.size();"
 echo -e "${Rst_GREY}Check if entry in Map using key:            ${Rst_YLOW}myMap.containsKey(\"key\");"
+echo -e "//TODO: add for loop samples"
 
 echo -e "${RESET}${TM_BRIGHT}\nInterfaces${RESET}"
 echo -e "Specifies methods that a class must implement if it uses the Interface"
