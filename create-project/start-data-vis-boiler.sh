@@ -42,7 +42,7 @@ cp -r ~/Documents/Library/$JQUERY/jquery.slim.min.js $PROJECT_NAME/static/librar
 
 
 # create boilerplate html
-cat <<EOT >> $PROJECT_NAME/index.html
+cat <<EOM >> $PROJECT_NAME/index.html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,10 +101,10 @@ cat <<EOT >> $PROJECT_NAME/index.html
 </body>
 
 </html>
-EOT
+EOM
 
 # create boilerplate README
-cat <<EOT >> $PROJECT_NAME/README.md
+cat <<EOM >> $PROJECT_NAME/README.md
 <h1 align="center"> Project Title - Readme.md HTML Template </h1>
 <p align="center"> Intro - Boilerplate for Readme.md on Github </p>
 <hr/>
@@ -124,16 +124,16 @@ cat <<EOT >> $PROJECT_NAME/README.md
 
 <h3> Code Demo </h3>
 
-```html
-We will use markdown for the Syntax Highlighting
-
-<ul>
-  <li>Beautiful Starter Template for README.md</li>
-  <li>Key feature num. 2</li>
-  <li>Key feature num. 3</li>
-  <li>Key feature num. 4</li>
-</ul>
-```
+ ```html
+ We will use markdown for the Syntax Highlighting
+ 
+ <ul>
+   <li>Beautiful Starter Template for README.md</li>
+   <li>Key feature num. 2</li>
+   <li>Key feature num. 3</li>
+   <li>Key feature num. 4</li>
+ </ul>
+ ```
 
 <h3> Download & Installation </h3>
 
@@ -231,7 +231,7 @@ d3.csv('../data/dummyData.csv')
 
     dc.renderAll();
   })
-EOT
+EOM
 
 # create boilerplate JAVASCRIPT
 cat <<EOT >> $PROJECT_NAME/data/dummyData.csv
@@ -636,4 +636,5 @@ cat <<EOT >> $PROJECT_NAME/data/dummyData.csv
 EOT
 
 
+echo "npx serve"
 echo "npx serve"
