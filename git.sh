@@ -16,6 +16,7 @@ echo -e "VIEWING COMMANDS"
 echo -e "  ${v}View help for git functions              ${f}git command -help                   "
 echo -e "  ${v}View git branches                        ${f}git branch ${n}-a                    "
 echo -e "  ${v}View git tree                            ${f}git log ${n}--graph --oneline --all  "
+echo -e "  ${v}View git log                             ${f}git log ${n}--pretty=format:\"%h%x09%an%x09%ad%x09%s\"  "
 echo -e "  ${v}List unstaged files                      ${f}git status                       "
 echo -e "  ${v}List unstaged files, compact view        ${f}git status --short                      "
 echo -e "  ${z}"
@@ -98,3 +99,5 @@ TO-DO:
 EOF
 
 # https://learngitbranching.js.org/
+# https://longair.net/blog/2009/04/16/git-fetch-and-merge/
+# https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch

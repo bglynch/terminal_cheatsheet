@@ -1,7 +1,18 @@
 #!/bin/bash
-NOW=$(date +"%y-%m-%d")
 
-mkdir ~/Desktop/date-dump/$NOW
-echo ~/Desktop/date-dump/$NOW | pbcopy
-# new dir printing to console
-# would be good to update so it cd's into the created dir
+# set constants
+TODAYS_DATE=$(date +"%y%m%d")
+DIRECTORY_NAME=$1
+
+# check if directory name given
+if [ -z "$DIRECTORY_NAME" ];
+then 
+  read -p 'Please give a directory name: ' DIRECTORY_NAME;
+fi
+
+mkdir ~/Desktop/date-dump/${TODAYS_DATE}_${DIRECTORY_NAME}
+echo -e "
+Created directory: ~/Desktop/date-dump/${TODAYS_DATE}_${DIRECTORY_NAME}
+                   \"\033[38;5;208mpress cmd + v, enter\033[m\" to enter the directory \n"
+
+echo "cd ~/Desktop/date-dump/${TODAYS_DATE}_${DIRECTORY_NAME}" | pbcopy

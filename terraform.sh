@@ -23,8 +23,11 @@ echo -e "  ${v}Create terrafrom:                ${f}terraform destroy ${n}-targe
 echo -e "  ${v}Current version                  ${f}terrafrom version"
 
 echo -e "\nFILES"
-echo -e "${v}gets created after we run terraform init:   ${f}.terraform"
+echo -e "${f}.terraform ${v}created after we run terraform init,    "
 echo -e "${v}current state of the terraform deployment:   ${f}terraform.tfstate"
+
+echo -e "\nOther Commands"
+echo -e "${v}Get name of resources in the terraform state: ${f}cat terraform.tfstate | jq '.resources | .[].type'"
 
 echo -e "${z}\nUseful Links"
 echo -e "${v}Providers registry:                ${f}https://registry.terraform.io/browse/providers"
